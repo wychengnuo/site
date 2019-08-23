@@ -1,51 +1,69 @@
+
 module.exports = {
-    mode: "universal",
+    mode: 'universal',
     /*
-     ** Headers of the page
-     */
+   ** Headers of the page
+   */
     head: {
-        title: process.env.npm_package_name || "",
+        title: process.env.npm_package_name || '',
         meta: [
-            { charset: "utf-8" },
+            { charset: 'utf-8' },
             {
-                name: "viewport",
-                content: "width=device-width, initial-scale=1"
+                name: 'viewport',
+                content: 'width=device-width, initial-scale=1'
             },
             {
-                hid: "description",
-                name: "description",
-                content: process.env.npm_package_description || ""
+                hid: 'description',
+                name: 'description',
+                content: process.env.npm_package_description || ''
             }
         ],
-        link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
     /*
-     ** Customize the progress-bar color
-     */
-    loading: { color: "#fff" },
+   ** Customize the progress-bar color
+   */
+    loading: { color: '#fff' },
     /*
-     ** Global CSS
-     */
+   ** Global CSS
+   */
     css: [],
     /*
-     ** Plugins to load before mounting the App
-     */
-    plugins: [],
+   ** Plugins to load before mounting the App
+   */
+    plugins: [
+        '~/plugins/extraJs.client.js',
+    ],
     /*
-     ** Nuxt.js dev-modules
-     */
+   ** Nuxt.js dev-modules
+   */
     buildModules: [],
     /*
-     ** Nuxt.js modules
-     */
+   ** Nuxt.js modules
+   */
     modules: [],
     /*
-     ** Build configuration
-     */
+   ** Build configuration
+   */
     build: {
-        /*
-         ** You can extend webpack config here
-         */
-        extend(config, ctx) {}
+    /*
+     ** You can extend webpack config here
+     */
+        postcss: {
+            plugins: {
+                'postcss-px2rem': {
+                    remUnit: 100
+                },
+                'pixrem': {
+                    rootValue: 236,
+                    replace: false,
+                    atrules: false,
+                    html: true,
+                    browsers: 'ie <= 8',
+                    unitPrecision: 2,
+                }
+            }
+        }
+    // extend(config, ctx) {}
     }
-}
+};

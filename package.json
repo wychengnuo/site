@@ -19,6 +19,8 @@
     "eslint-plugin-vue": "^5.2.3",
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
+    "pixrem": "^5.0.0",
+    "postcss-px2rem": "^0.3.0",
     "prettier": "^1.18.2"
   },
   "devDependencies": {
