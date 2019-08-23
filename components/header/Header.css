@@ -1,0 +1,9 @@
+.header {
+    height: 120px;
+    border: 1px #000 solid;
+
+    .logo {
+        width: 200px;
+    }
+}
+

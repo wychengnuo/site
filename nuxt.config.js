@@ -61,6 +61,13 @@ module.exports = {
                     html: true,
                     browsers: 'ie <= 8',
                     unitPrecision: 2,
+                },
+                'postcss-calc': {
+                    warnWhenCannotResolve: true
+                },
+                'postcss-nesting': {},
+                'postcss-nested': {
+                    preserveEmpty: true,
                 }
             }
         }

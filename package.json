@@ -20,6 +20,9 @@
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
     "pixrem": "^5.0.0",
+    "postcss-calc": "^7.0.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-nesting": "^7.0.1",
     "postcss-px2rem": "^0.3.0",
     "prettier": "^1.18.2"
   },
