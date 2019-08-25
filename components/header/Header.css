@@ -1,9 +1,28 @@
 .header {
     height: 120px;
-    border: 1px #000 solid;
-
-    .logo {
-        width: 200px;
-    }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
 }
 
+.header .menu a {
+    margin: 0 10px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.header .menu a:hover,
+.header .menu a:focus,
+.header .menu a.active {
+    background: #ffc001;
+    color: #fff;
+}

@@ -1,13 +1,13 @@
-
 module.exports = {
     mode: 'universal',
     /*
-   ** Headers of the page
-   */
+     ** Headers of the page
+     */
     head: {
         title: process.env.npm_package_name || '',
-        meta: [
-            { charset: 'utf-8' },
+        meta: [{
+                charset: 'utf-8'
+            },
             {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1'
@@ -18,37 +18,58 @@ module.exports = {
                 content: process.env.npm_package_description || ''
             }
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+        link: [{
+            rel: 'icon',
+            type: 'image/x-icon',
+            href: '/favicon.ico'
+        }],
     },
     /*
-   ** Customize the progress-bar color
-   */
-    loading: { color: '#fff' },
+     ** Customize the progress-bar color
+     */
+    loading: {
+        color: '#fff'
+    },
     /*
-   ** Global CSS
-   */
+     ** Global CSS
+     */
     css: [],
     /*
-   ** Plugins to load before mounting the App
-   */
+     ** Plugins to load before mounting the App
+     */
     plugins: [
         '~/plugins/extraJs.client.js',
+        '~/plugins/element.js',
     ],
     /*
-   ** Nuxt.js dev-modules
-   */
+     ** Nuxt.js dev-modules
+     */
     buildModules: [],
     /*
-   ** Nuxt.js modules
-   */
-    modules: [],
-    /*
-   ** Build configuration
-   */
-    build: {
-    /*
-     ** You can extend webpack config here
+     ** Nuxt.js modules
      */
+    modules: [],
+    // module: {
+    //     rules: [
+    //         {
+    //             test: /\.css$/,
+    //             // important: use vue-style-loader instead of style-loader
+    //             use: process.env === 'production'
+    //                 ? ExtractTextPlugin.extract({
+    //                     use: 'css-loader',
+    //                     fallback: 'vue-style-loader'
+    //                 })
+    //                 : ['vue-style-loader', 'css-loader']
+    //         }
+    //     ]
+    // },
+    /*
+     ** Build configuration
+     */
+    build: {
+        /*
+         ** You can extend webpack config here
+         */
         postcss: {
             plugins: {
                 'postcss-px2rem': {
@@ -66,11 +87,44 @@ module.exports = {
                     warnWhenCannotResolve: true
                 },
                 'postcss-nesting': {},
-                'postcss-nested': {
-                    preserveEmpty: true,
+                'postcss-nested': {}
+            },
+            preset: {
+                // 更改postcss-preset-env 设置
+                autoprefixer: {
+                    grid: true
                 }
             }
-        }
-    // extend(config, ctx) {}
-    }
+        },
+
+        loaders: {
+            // vue: {
+            //     transformAssetUrls: {
+            //         video: 'src',
+            //         source: 'src',
+            //         object: 'src',
+            //         embed: 'src'
+            //     }
+            // },
+            cssModules: {
+                modules: true
+            },
+            css: {},
+            vueStyle: {}
+        },
+        babel: {
+            plugins: [
+                [
+                    'component',
+                    {
+                        'libraryName': 'element',
+                        'styleLibraryName': 'theme-chalk/src',
+                        'ext': '.scss'
+                    },
+                    'element',
+                ]
+            ],
+        },
+        // extend(config, ctx) {}
+    },
 };

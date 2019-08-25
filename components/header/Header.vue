@@ -1,7 +1,13 @@
 <template>
-    <div class="header">
-        <div class="max-width">
-            <Logo class="" />
+    <div :class="$style.header">
+        <div :class="$style.logo">
+            <Logo />
+        </div>
+        <div :class="$style.menu">
+            <router-link to="/" :class="$style.active">首页</router-link>
+            <router-link to="/">服务</router-link>
+            <router-link to="/">关于我们</router-link>
+            <router-link to="/">联系我们</router-link>
         </div>
     </div>
 </template>
@@ -17,6 +23,6 @@ export default {
 
 </script>
 
-<style  scoped> 
+<style module>
     @import './Header.css';
 </style>

@@ -13,7 +13,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "babel-node": "0.0.1-security",
+    "babel-plugin-component": "^1.1.1",
     "cross-env": "^5.2.0",
+    "css-loader": "^3.2.0",
+    "element-ui": "^2.11.1",
     "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.2.3",
@@ -24,7 +28,8 @@
     "postcss-nested": "^4.1.2",
     "postcss-nesting": "^7.0.1",
     "postcss-px2rem": "^0.3.0",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "vue-style-loader": "^4.1.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
