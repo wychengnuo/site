@@ -1,0 +1,94 @@
+.contact {
+    background: #202430;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .title {
+    font-size: 30px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.contact .desc {
+    font-size: 16px;
+    color: #c6c6c6;
+    margin: 20px 0;
+}
+
+.contact .desc > span {
+    display: block;
+    line-height: 26px;
+}
+
+.contact .contactMess {
+    padding: 20px 0;
+    display: flex;
+    align-items: top;
+}
+
+.contact .contactMess img {
+    width: 28px;
+    height: 20px;
+}
+
+.contact .text {
+    font-size: 16px;
+    color: #c6c6c6;
+    padding-left: 20px;
+}
+
+.contact .text > p:first-child {
+    margin-bottom: 8px;
+}
+
+.contact .contactRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .inputItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.contact .inputLabel {
+    font-size: 16px;
+    color: #c6c6c6;
+    width: 100px;
+    text-align: right;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.contact .inputElement {
+    height: 35px;
+}
+
+.contact .inputElement > input {
+    width: 300px;
+    height: 100%;
+}
+
+.contact .height {
+    height: auto;
+}
+
+.contact .inputElement > textarea {
+    width: 300px;
+}
+
+.contact .btn {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background: #FFC001;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}

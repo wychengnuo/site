@@ -1,10 +1,11 @@
 <template>
     <div class="container">
-        <Banner />
+        <!-- <Banner />
         <About />
         <ServiceItem />
         <ProductItem />
-        <Advantage />
+        <Advantage /> -->
+        <Contact />
     </div>
 </template>
 
@@ -13,7 +14,8 @@ import Banner from '~/components/banner/Banner';
 import About from '~/components/about/About';
 import ServiceItem from '~/components/service/serviceItem/ServiceItem';
 import ProductItem from '~/components/service/produceItem/ProductItem';
-import Advantage from '~/components/advantage/advantage';
+import Advantage from '~/components/advantage/Advantage';
+import Contact from '~/components/contact/Contact';
 
 export default {
     components: {
@@ -22,6 +24,7 @@ export default {
         ServiceItem,
         ProductItem,
         Advantage,
+        Contact,
     }
 };
 </script>

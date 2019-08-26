@@ -1,9 +1,9 @@
 .service {
     width: 100%;
-    height: 740px;
+    height: 710px;
     background: #202430;
     position: relative;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .service .serviceMess {
