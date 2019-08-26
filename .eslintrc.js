@@ -38,6 +38,7 @@ module.exports = {
             "alignAttributesVertically": true,
             "ignores": []
         }],
+        // "vue/html-self-closing": "off",
         "camelcase": ["error", {"properties": "never"}],
         "no-alert": "error",
     }

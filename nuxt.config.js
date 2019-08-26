@@ -6,17 +6,17 @@ module.exports = {
     head: {
         title: process.env.npm_package_name || '',
         meta: [{
-                charset: 'utf-8'
-            },
-            {
-                name: 'viewport',
-                content: 'width=device-width, initial-scale=1'
-            },
-            {
-                hid: 'description',
-                name: 'description',
-                content: process.env.npm_package_description || ''
-            }
+            charset: 'utf-8'
+        },
+        {
+            name: 'viewport',
+            content: 'width=device-width, initial-scale=1'
+        },
+        {
+            hid: 'description',
+            name: 'description',
+            content: process.env.npm_package_description || ''
+        }
         ],
         link: [{
             rel: 'icon',
@@ -33,7 +33,9 @@ module.exports = {
     /*
      ** Global CSS
      */
-    css: [],
+    css: [
+        'element-ui/lib/theme-chalk/index.css',
+    ],
     /*
      ** Plugins to load before mounting the App
      */
@@ -63,6 +65,10 @@ module.exports = {
     //         }
     //     ]
     // },
+    server: {
+        port: 3001, // default: 3000
+        // host: '172.16.22.20',
+    },
     /*
      ** Build configuration
      */
@@ -112,19 +118,7 @@ module.exports = {
             css: {},
             vueStyle: {}
         },
-        babel: {
-            plugins: [
-                [
-                    'component',
-                    {
-                        'libraryName': 'element',
-                        'styleLibraryName': 'theme-chalk/src',
-                        'ext': '.scss'
-                    },
-                    'element',
-                ]
-            ],
-        },
+        vendor: ['element-ui']
         // extend(config, ctx) {}
     },
 };

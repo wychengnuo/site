@@ -1,0 +1,88 @@
+.advantage {
+    width: 100%;
+    padding: 80px;
+    background-color: #202430;
+    background-image: url('./../../static/home/advantage.jpeg') center right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.advantage .advantageLeft {
+    flex: .6;
+}
+
+.advantage .title {
+    width: 327px;
+    padding: 20px 0;
+    border: 10px #8D8D92 solid;
+}
+
+.advantage .title1 {
+    font-size: 60px;
+    color: #FFC001;
+    margin-left: -40px;
+    background: #202430;
+}
+
+.advantage .title2 {
+    font-size: 60px;
+    color: #fff;
+    margin-left: -40px;
+    background: #202430;
+} 
+
+.advantage .desc {
+    font-size: 16px;
+    color: #fff;
+    margin: 50px 0;
+}
+
+.advantage .line {
+    width: 64px;
+    height: 1px;
+    display: block;
+    border: 1px #FFC001 solid;
+}
+
+.advantage .advantageRight {
+    flex: 1;
+    background: #fff;
+    padding: 20px 50px;
+}
+
+.advantage .advantageItem {
+    width: 45%;
+    margin: 30px 10px;
+    display: inline-block;
+}
+
+.advantage .advantageItem img {
+    width: 60px;
+}
+
+.advantage .advantageTitle {
+    font-size: 16px;
+    color: #333232;
+    line-height: 50px;
+    font-weight: bold;
+    position: relative;
+}
+
+.advantage .advantageTitle::before {
+    width: 32px;
+    height: 1px;
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 1px #FFC001 solid;
+}
+
+.advantage .advantageDesc {
+    font-size: 16px;
+    color: #808080;
+    line-height: 30px;
+    margin-top: 10px;
+}
