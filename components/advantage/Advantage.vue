@@ -1,28 +1,30 @@
 <template>
-    <div :class="$style.advantage">
-        <div :class="$style.advantageLeft">
-            <div :class="$style.title">
-                <p :class="$style.title1">
-                    {{ title1 }}
+    <div :class="$style.advantageContainer">
+        <div :class="$style.advantage">
+            <div :class="$style.advantageLeft">
+                <div :class="$style.title">
+                    <p :class="$style.title1">
+                        {{ title1 }}
+                    </p>
+                    <p :class="$style.title2">
+                        {{ title2 }}
+                    </p>
+                </div>
+                <p :class="$style.desc">
+                    {{ desc }}
                 </p>
-                <p :class="$style.title2">
-                    {{ title2 }}
-                </p>
+                <i :class="$style.line" />
             </div>
-            <p :class="$style.desc">
-                {{ desc }}
-            </p>
-            <i :class="$style.line" />
-        </div>
-        <div :class="$style.advantageRight">
-            <div v-for="item in advantageList" :key="item.id" :class="$style.advantageItem">
-                <img :src="item.icon">
-                <p :class="$style.advantageTitle">
-                    {{ item.title }}
-                </p>
-                <p :class="$style.advantageDesc">
-                    {{ item.desc }}
-                </p>
+            <div :class="$style.advantageRight">
+                <div v-for="item in advantageList" :key="item.id" :class="$style.advantageItem">
+                    <img :src="item.icon">
+                    <p :class="$style.advantageTitle">
+                        {{ item.title }}
+                    </p>
+                    <p :class="$style.advantageDesc">
+                        {{ item.desc }}
+                    </p>
+                </div>
             </div>
         </div>
     </div>

@@ -1,22 +1,24 @@
 <template>
-    <div :class="$style.product">
-        <div :class="$style.productMess">
-            <p :class="$style.title">
-                {{ title }}
-            </p>
-            <p :class="$style.desc">
-                {{ desc }}
-            </p>
-        </div>
-        <div :class="$style.productCon">
-            <div v-for="item in productList" :key="item.id" :class="$style.productItem">
-                <img :src="item.icon">
-                <p :class="$style.productTitle">
-                    {{ item.title }}
+    <div :class="$style.productContainer">
+        <div :class="$style.product">
+            <div :class="$style.productMess">
+                <p :class="$style.title">
+                    {{ title }}
                 </p>
-                <p :class="$style.productDesc">
-                    {{ item.desc }}
+                <p :class="$style.desc">
+                    {{ desc }}
                 </p>
+            </div>
+            <div :class="$style.productCon">
+                <div v-for="item in productList" :key="item.id" :class="$style.productItem">
+                    <img :src="item.icon">
+                    <p :class="$style.productTitle">
+                        {{ item.title }}
+                    </p>
+                    <p :class="$style.productDesc">
+                        {{ item.desc }}
+                    </p>
+                </div>
             </div>
         </div>
     </div>

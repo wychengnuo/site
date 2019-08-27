@@ -1,7 +1,12 @@
-.advantage {
+.advantageContainer {
     width: 100%;
-    padding: 80px;
     background-color: #202430;
+}
+
+.advantage {
+    max-width: 1200px;
+    padding: 80px;
+    margin: 0 auto;
     background-image: url('./../../static/home/advantage.jpeg') center right;
     display: flex;
     justify-content: space-around;

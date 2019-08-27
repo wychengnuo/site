@@ -4,7 +4,8 @@
         <About />
         <ServiceItem />
         <ProductItem />
-        <Advantage /> -->
+        <Advantage />
+        <Case /> -->
         <Contact />
     </div>
 </template>
@@ -16,6 +17,7 @@ import ServiceItem from '~/components/service/serviceItem/ServiceItem';
 import ProductItem from '~/components/service/produceItem/ProductItem';
 import Advantage from '~/components/advantage/Advantage';
 import Contact from '~/components/contact/Contact';
+import Case from '~/components/case/Case';
 
 export default {
     components: {
@@ -24,6 +26,7 @@ export default {
         ServiceItem,
         ProductItem,
         Advantage,
+        Case,
         Contact,
     }
 };

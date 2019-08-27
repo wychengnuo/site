@@ -1,9 +1,15 @@
-.service {
+.serviceContainer {
     width: 100%;
-    height: 710px;
+    height: 720px;
     background: #202430;
-    position: relative;
     padding-top: 30px;
+}
+
+.service {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
 .service .serviceMess {

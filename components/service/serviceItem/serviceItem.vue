@@ -1,20 +1,22 @@
 <template>
-    <div :class="$style.service">
-        <div :class="$style.serviceMess">
-            <p :class="$style.title">
-                <span>{{ title }}</span>
-            </p>
-            <p :class="$style.desc">
-                {{ desc }}
-            </p>
-        </div>
-        <div :class="$style.serviceCon">
-            <i :class="$style.link" />
-            <div :class="$style.serviceLeft">
-                {{ serviceMess }}
+    <div :class="$style.serviceContainer">
+        <div :class="$style.service">
+            <div :class="$style.serviceMess">
+                <p :class="$style.title">
+                    <span>{{ title }}</span>
+                </p>
+                <p :class="$style.desc">
+                    {{ desc }}
+                </p>
             </div>
-            <div :class="$style.serviceRight">
-                <img :src="SERVICE">
+            <div :class="$style.serviceCon">
+                <i :class="$style.link" />
+                <div :class="$style.serviceLeft">
+                    {{ serviceMess }}
+                </div>
+                <div :class="$style.serviceRight">
+                    <img :src="SERVICE">
+                </div>
             </div>
         </div>
     </div>

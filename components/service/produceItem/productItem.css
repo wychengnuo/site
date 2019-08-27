@@ -1,6 +1,11 @@
-.product {
+.productContainer {
     width: 100%;
     padding: 50px 20px;
+}
+
+.product {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .productMess {
