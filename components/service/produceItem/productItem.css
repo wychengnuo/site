@@ -49,4 +49,21 @@
 .product .productDesc {
     font-size: 14px;
     color: #a1a1a1;
+    text-align: left;
+    position: relative;
+    padding-left: 15px;
+    line-height: 25px;
+}
+
+.product .productDesc::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-30%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #a1a1a1;
+    content: '';
+    display: block;
 }

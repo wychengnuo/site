@@ -1,11 +1,11 @@
 <template>
     <div class="container">
-        <!-- <Banner />
+        <Banner />
         <About />
         <ServiceItem />
         <ProductItem />
         <Advantage />
-        <Case /> -->
+        <Case />
         <Contact />
     </div>
 </template>
